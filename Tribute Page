@@ -1,0 +1,66 @@
+HTML part
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<head>
+<title> Roxas Tribute </title>
+</head>
+<body id="main">
+  <h1 id="title"> Roxas </h1>
+  <div id="img-div">
+    <img src="https://vignette.wikia.nocookie.net/vsbattles/images/b/be/Roxas_%28Art%29_KHD.png/revision/latest?cb=20160217034307" id="image">
+    <p id="img-caption"> Picture of Roxas wielding the keyblade </p>
+  </div>
+  <p id="tribute-info">
+    <b>Roxas Life</b>
+    <ul>
+      <li>Created from Sora</li>
+      <li>Joined the Organization as number XIII</li>
+      <li>Left the organization after realising their intentions</li>
+      <li>Rejoined sora after losing to Riku</li>
+      <li>Regained his body in KH3 </li>
+  </ul>
+  </p>
+<p id="wiki-link"> For more information please see the <a href="https://vsbattles.fandom.com/wiki/Roxas" target="_blank" id="tribute-link">Wikipedia Entry.
+</body>
+
+CSS Part
+
+#main{
+  background-color: silver;
+}
+#title{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  background-color: gray;
+  width: 100px;
+  margin-left: 45%;
+  border: 3px solid white;
+  border-radius: 15px;
+}
+#img-div{
+  background-color: white;
+  width: 500px;
+  margin-left:30%;
+}
+#image{
+display: block;
+margin-left: auto;
+margin-right: auto;
+max-width: 300px;
+}
+#img-caption{
+  text-align: center;
+}
+#tribute-info{
+  text-align: center;
+}
+ul{
+  width:300px;
+  margin:0 auto;
+  text-align:left;
+}
+#wiki-link{
+  text-align: center;
+}

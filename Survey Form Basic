@@ -1,0 +1,117 @@
+HTML
+
+<head>
+  <title> Survey Form </title>
+</head>
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div id="box1">
+    <p id="description">Let me know how I can improve the Design</p>
+    <form id="survey-form">
+      <p id="t-row">
+      <label for="name" id="name-label">* Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required> 
+      </p>
+      <p id="t-row">
+      <label for="email" id="email-label">* Email</label>
+    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+      </p>
+      <p id="t-row">
+      <label for="number" id="number-label">* Age </label>
+    <input type="number" id="number" name="number" placeholder="Age" min="1" max="130" required> 
+      </p>
+      
+      <p id="t-row">
+        <label for="dropdown">Which option describes you the best?</label>
+       <select id="dropdown" name="dropdown">
+       <option value="st">Student</option>
+       <option value="pf">Professional</option>
+       <option value="fr">Freelancer</option>
+        </select>
+      </p>
+      <p id="t-row">
+        <label for="choice"> How likely are you to visit again? </label>
+        <input type="radio" name="choice" value="yes"> Yes 
+        <input type="radio" name="choice" value="maybe"> Maybe 
+  <input type="radio" name="choice" value="no"> No<br> 
+      </p><br>
+      <p id="t-row">
+        <label for="checkboxes"> Recommend Changes(Check all that Apply): </label>
+        <input type="checkbox" name="c1" value="colors"> Change Colors<br>
+  <input type="checkbox" name="c2" value="fonts"> Change Fonts<br>
+  <input type="checkbox" name="c3" value="resize" checked> Resize  Items<br>
+        <input type="checkbox" name="c4" value="align" checked> Align items<br>
+      </p><br>
+      <p id="t-row">
+        <label for="textarea">Any other suggestions? 
+        <textarea id="textarea" rows="4" cols="30" placeholder="Describe yourself here...">
+          </textarea> </label>
+        <input  id="submit" type="submit" value="Submit">
+      </p>
+    </form>
+  </div>
+</body>
+
+
+CSS
+
+body{
+  background: silver;
+}
+#title{
+  text-align: center;
+}
+#box1{
+  background-color:white;
+  text-align: center;
+  box-sizing: border-box;
+  width:70%;
+  margin-left: 15%;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+form  { display: table;      }
+#t-row{ display: table-row;  }
+label { display: table-cell; text-align: right}
+input { display: table-cell; }
+select {display: table-cell; }
+input[type=text]{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email]{
+  width: 100%;
+  padding: 5px 10px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number]{
+  width: 100%;
+  padding: 5px 5px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 5px 5px;
+  margin: 10px 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+label textarea{
+  display: table-cell; 
+  vertical-align: middle;}

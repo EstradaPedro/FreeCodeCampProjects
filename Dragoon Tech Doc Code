@@ -1,0 +1,156 @@
+HTML PART
+--------------
+<nav id="navbar">
+  <header> Dragoon Documentation</header>
+  <div>
+  <a class="nav-link" href="#Introduction" rel="internal"><p>Introduction</p></a>
+  <a class="nav-link" href="#What_you_should_already_know" rel="internal"><p>What you should already know</p></a>
+  <a class="nav-link" href="#Dragoon_Basics" rel="internal"><p>Dragoon Basics</p></a>
+  <a class="nav-link" href="#Dragoon_Skills" rel="internal"><p>Dragoon Skills</p></a>
+  <a class="nav-link" href="#Dragoon_Rotation" rel="internal"><p>Dragoon Rotation</p></a>
+  <a class="nav-link" href="#Final_Thoughts" rel="internal"><p>Final Thoughts</p></a>
+  </div>
+</nav>
+<main id="main-doc">
+  <section  class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <img src="https://ih1.redbubble.net/image.106735529.5434/st%2Csmall%2C215x235-pad%2C210x230%2Cf8f8f8.lite-1u2.jpg" class="img-re">
+    <p> This document shows the basics of what the class Dragoon in Final Fantasy XIV is all about.
+    </p>
+    <p> From showing the skills and the basic rotation of how to use those skills.
+  </section>
+  <section  class="main-section" id="What_you_should_already_know">
+    <header> What you should already know 
+    </header>
+    <p>In order for this guide to make sense you should be familiar with MMO(massive-multiplayer online) terms such as:</p>
+    <ul>
+      <li> DPS = Damage per Second </li>
+      <li> DOT = Damage over time </li>
+      <li> GCD = Global cooldown </li>
+      <li> OGCD = Off global cooldown </li>
+    </ul>
+  </section>
+  <section  class="main-section" id="Dragoon_Basics">
+    <header> Dragoon Basics</header>
+    <p>
+      Dragoon is one of 4 DPS melee classes available in the game as of 2/19/2019. 
+    </p>
+    <p> They deal the third most damage of the four and provide the second most utility(support) of the four. </p>
+    <p> They are a rotation centered based class meaning that they prioritize keeping their rotation up to deal the most damage they can. </p>
+    <p>Note: Only focuses on the dragoon skills and not on snyergies or other abilities.</p>
+  </section>
+  <section  class="main-section" id="Dragoon_Skills">
+    <header> Dragoon Skills</header>
+    <p> The Dragoon skills that are on the GCD: 
+      <code>
+        <li> True Thrust (TT) </li>
+        <li> Vorpal Thrust (VT)</li>
+        <li> Full Thrust  (FT)</li>
+        <li> Heavy Thrust (HT) </li>
+        <li> Impulse Drive (ID) </li>
+        <li> Disembowel (D) </li>
+        <li> Chaos Thrust (CT) </li>
+        <li> Piercing Talon (PT) </li>
+        <li> Doom Spike (DS) </li>
+        <li> Fang and Claw (FC)</li>
+        <li> Wheeling Thrust (WT)</li>
+        <li> Sonic Thrust (ST)</li>
+      </code>
+    </p>
+    <p> The Dragoon skills that are on the OGCD:
+      <code>
+        <li> Life Surge (LS) </li>
+        <li> Blood for Blood (BfB) </li>
+        <li> Jump (J) </li>
+        <li> Elusive Jump (EJ) </li>
+        <li> Spineshatter Dive (SD) </li>
+        <li> Dragonfire Dive (DD) </li>
+        <li> Battle Litany(BL) </li>
+        <li> Blood of the Dragon (BotD) </li>
+        <li> Geirskogul (GS)</li>
+        <li> Dragon Sight (DS)</li>
+        <li> Mirage Dive(MD)</li>
+        <li> Nastrond (N)</li>
+      </code>
+    </p>
+  </section>
+  <section  class="main-section" id="Dragoon_Rotation">
+    <header> Dragoon Rotation</header>
+    <p> The rotation involves doing the same skills over and over while weaving the OGCD's when they come up </p>
+    <p> The basic rotation consists of using your jumps when available in order to build eyes(a mechanic for dragoons), once you have 3 eyes you get access to Nastrond and the rotation ends once you use them up or times runs out and the rotation begins again but with buffs not in the same places as before.</p>
+    <p> The opener goes as follow: (---> means that the following skills are OGCD and --> means  GCD skills): 
+      <code>
+        <li> HT ---> BotD + BL --> ID ---> DS + BfB --> D ---> Strength Pot --> CT ---> J --> WT ---> GS + MD --> FC ---> SD --> TT ---> DD --> VT ---> MD + LS --> FT</li>
+      </code>
+    </p>
+    
+  </section>
+  <section  class="main-section" id="Final_Thoughts">
+    <header> Final Thoughts</header>
+    <p> If you are looking to deal the most damage on a team Dragoon is not the class for you, but if you want a class that has flair to it and is in demand look no further than this. </p>
+    <a href="https://docs.google.com/document/d/1BttZDZZ2eNuQA4w6HUNfMcjxw553ZmwZc8vHkZS5IpI/edit" target="_blank"><p>More detailed guide made by Thendiel Swansong of Adamantoise</p></a>
+  </section>
+</main>
+
+CSS PART
+---------
+nav header{
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#navbar{
+  position:fixed;
+  min-width:290px;
+  top:0px;
+  left:0px;
+  width:300px;
+  height:100%;
+  border-right:solid;
+  border-color:rgba(0,22,22,0.4);
+  background-color: #fff5ee;
+}
+nav div{
+  height: 90%;
+  overflow-y:auto;
+  overflow-x:hidden;
+}
+nav a {
+  text-decoration: none;
+  color: #4d4e53;
+}
+nav a:hover{color: blue; border-color:#4d4e53}
+nav p{
+
+  border:1px solid;
+  border-bottom-width:0px;
+  padding-top:20px;
+  padding-bottom: 10px;
+  padding-left:5px;
+  position:relative;
+  width:100%;
+}
+#main-doc{
+  position: absolute;
+  margin-left:310px;
+  padding:20px;
+  margin-bottom:110px;
+}
+header{
+  color:black;
+  font-size: 20px;
+  text-align:left;
+}
+.img-re{
+max-width: 50px;
+}
+li{
+  margin-left: 25px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}

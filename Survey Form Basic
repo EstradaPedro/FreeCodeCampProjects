@@ -1,5 +1,5 @@
-HTML
-
+HTML PART
+-----------------------
 <head>
   <title> Survey Form </title>
 </head>
@@ -7,7 +7,7 @@ HTML
 <body>
   <h1 id="title">Survey Form</h1>
   <div id="box1">
-    <p id="description">Let me know how I can improve the Design</p>
+    <p id="description">Basic Survey Inputs</p>
     <form id="survey-form">
       <p id="t-row">
       <label for="name" id="name-label">* Name</label>
@@ -32,8 +32,8 @@ HTML
       </p>
       <p id="t-row">
         <label for="choice"> How likely are you to visit again? </label>
-        <input type="radio" name="choice" value="yes"> Yes 
-        <input type="radio" name="choice" value="maybe"> Maybe 
+        <input type="radio" name="choice" value="yes"> Yes <br>
+        <input type="radio" name="choice" value="maybe"> Maybe <br>
   <input type="radio" name="choice" value="no"> No<br> 
       </p><br>
       <p id="t-row">
@@ -44,9 +44,11 @@ HTML
         <input type="checkbox" name="c4" value="align" checked> Align items<br>
       </p><br>
       <p id="t-row">
-        <label for="textarea">Any other suggestions? 
-        <textarea id="textarea" rows="4" cols="30" placeholder="Describe yourself here...">
+        <label for="textarea" id="box12">Any other suggestions? 
+        <textarea id="textarea" rows="4" cols="30" placeholder="Describe yourself here..."> Describe yourself here...
           </textarea> </label>
+      </p>
+      <p id="t-row">
         <input  id="submit" type="submit" value="Submit">
       </p>
     </form>
@@ -54,28 +56,30 @@ HTML
 </body>
 
 
-CSS
 
+CSS Part
+--------------
 body{
-  background: silver;
+  background: #809fff;
 }
 #title{
   text-align: center;
+  font-size: 40px;
 }
 #box1{
   background-color:white;
-  text-align: center;
   box-sizing: border-box;
   width:70%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   margin-left: 15%;
-  border: 2px solid blue;
-  border-radius: 10px;
+  border: 3px solid black;
+  border-radius: 15px;
 }
+#description{text-align: center; font-size: 25px;}
 form  { display: table;      }
 #t-row{ display: table-row;  }
 label { display: table-cell; text-align: right}
-input { display: table-cell; }
-select {display: table-cell; }
 input[type=text]{
   width: 100%;
   padding: 5px 10px;
@@ -114,4 +118,18 @@ select {
 }
 label textarea{
   display: table-cell; 
-  vertical-align: middle;}
+  vertical-align: middle;
+  text-align: center;
+}
+#box12{
+  margin
+}
+input[type=submit]{
+  width: 50%;
+  padding: 5px 5px;
+  margin: 20px 90%;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

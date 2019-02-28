@@ -1,0 +1,117 @@
+HTML PART
+-----------------
+<nav>
+  <ul id='navbar'>
+    <li><a href="#welcome-section">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+<body>
+  <div id="welcome-section">
+    <h1>Pedro Estrada's Portfolio</h1>
+  </div>
+  <div id="projects">
+    <a href="https://codepen.io/estradapedro12/full/GzzmJx" target="_blank" class="project">
+    <div class="project-title"> Roxas Tribute Page</div>
+  </a>
+     <a href="https://codepen.io/estradapedro12/full/BMbYvv" target="_blank" class="project">
+    <div class="project-title">Dragoon Tech Document</div>
+  </a>
+     <a href="https://codepen.io/estradapedro12/full/omVYde" target="_blank" class="project">
+    <div class="project-title">Product Landing Page</div>
+  </a>
+     <a href="https://codepen.io/estradapedro12/full/Oddmyw" target="_blank" class="project">
+    <div class="project-title">Survey Form</div>
+  </a>
+  </div>
+  <div id="contact">
+    <a id='profile-link' href="https://github.com/estradapedro" target="_blank" class="contact-details">GitHub</a>
+    <a id='profile-link' href="https://github.com/estradapedro" target="_blank" class="contact-details">CodePen</a>
+  </div>
+</body>
+
+CSS Part
+--------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav ul{
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  background-color: #8fe0c2;
+}
+nav ul li{
+  display: inline-block;
+  margin: 25px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1414eb;
+}
+nav ul li a{
+  text-decoration: none;
+}
+nav ul li a:hover {
+  font-weight: bold;
+  color: red;
+}
+#welcome-section{
+  background-color:#8fe0c2;
+  display: block;
+  height: 80vh;
+}
+h1{
+text-align: center;
+vertical-align: middle;
+line-height: 80vh;
+}
+#projects{
+  bacground-color: gray;
+}
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover{
+  color: red;
+  font-weight:bold;
+}
+#projects{
+  text-align:center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.project{
+  text-decoration: none;
+  color: #1414eb;
+  background-color: #8fe0c2;
+  display: inline-block;
+  border: 4px solid lightblue;
+  height: 50px;
+  width: 300px;
+  margin: 40px 100px;
+  text-align: center;
+  vertical-align: middle;
+  line-height:45px;
+}
+#contact{
+  background-color: #009973;
+}
+.contact-details{
+  color: #1414eb;
+  background-color: white;
+  display: inline-block;
+  border: 4px solid lightblue;
+  height: 100px;
+  width: 100px;
+  border-radius: 400px;
+  margin-top: 40px;
+  margin-bottom:40px;
+  margin-left: 28%;
+  text-align: center;
+  line-height:90px;
+}

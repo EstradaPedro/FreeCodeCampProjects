@@ -1,66 +1,79 @@
 HTML part
-
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+---------------
 
 <head>
-<title> Roxas Tribute </title>
+<title> Chester Tribute Page </title>
 </head>
 <body id="main">
-  <h1 id="title"> Roxas </h1>
+  <p id="title"> Chester Bennington</p>
   <div id="img-div">
-    <img src="https://vignette.wikia.nocookie.net/vsbattles/images/b/be/Roxas_%28Art%29_KHD.png/revision/latest?cb=20160217034307" id="image">
-    <p id="img-caption"> Picture of Roxas wielding the keyblade </p>
+    <img src="https://www.usmagazine.com/wp-content/uploads/455942468_chester-bennington-zoom-d1f4c7c6-fc95-4c9a-ae88-bccd0f6e67b8.jpg?w=768&h=768" id="image">
+    <p id="img-caption"> Picture of Chester  Bennington at The United Nations 2014 Equator Prize Gala in New York City</p>
   </div>
   <p id="tribute-info">
-    <b>Roxas Life</b>
+    <p id="tribute-title">Chester's Life</p>
     <ul>
-      <li>Created from Sora</li>
-      <li>Joined the Organization as number XIII</li>
-      <li>Left the organization after realising their intentions</li>
-      <li>Rejoined sora after losing to Riku</li>
-      <li>Regained his body in KH3 </li>
+      <li>March 20, 1976 – July 20, 2017</li>
+      <li>Best known for his role as the lead vocalist of Linkin Park.</li>
+      <li>His early childhood life was not a pleasant one at all, from sexual abuse to family seperation and getting into drugs to cope with everything.</li>
+      <li>Started his musical career around the age of 18 with some of his friends in phoenix, arizona.</li>
+      <li>After some time he left the band but couldn't find a new one and was ready to quit until he got called from Jeff Blue to audition for a new band that would become Linkin Park. </li>
+      <li>There was problems starting up the band but after those problems got fixed the band became what it is today.</li>
+      <li>Chester died on July 20, 2017 due to suicide, speculation believes it to be because of depression.</li>
   </ul>
   </p>
-<p id="wiki-link"> For more information please see the <a href="https://vsbattles.fandom.com/wiki/Roxas" target="_blank" id="tribute-link">Wikipedia Entry.
-</body>
+<p id="wiki-link"> For more information please see the <a href="https://en.wikipedia.org/wiki/Chester_Bennington" target="_blank" id="tribute-link">Wikipedia Entry.
+  </body>
 
 CSS Part
+-------------
 
 #main{
-  background-color: silver;
+  background-color: #000;
 }
 #title{
-  color: white;
-  font-size: 35px;
+  color: #7df9ff;
+  font-size: 45px;
+  display: block;
   text-align: center;
-  background-color: gray;
-  width: 100px;
-  margin-left: 45%;
-  border: 3px solid white;
-  border-radius: 15px;
 }
 #img-div{
-  background-color: white;
+  background-color: #000;
   width: 500px;
-  margin-left:30%;
+  margin-left:33%;
+  border: 1px solid #FFF;
 }
 #image{
 display: block;
 margin-left: auto;
 margin-right: auto;
-max-width: 300px;
+margin-top: 20px;
+max-width: 400px;
+ 
 }
 #img-caption{
   text-align: center;
+  color: #7df9ff;
 }
 #tribute-info{
+  color: #7df9ff;
   text-align: center;
 }
+#tribute-title{
+  color: #7df9ff;
+  text-align: center;
+  font-size: 25px;
+}
 ul{
-  width:300px;
+  width:400px;
   margin:0 auto;
-  text-align:left;
+  color: #7df9ff;
+  font-size: 20px;
+}
+li{
+  margin: 10px;
 }
 #wiki-link{
+  color: #7df9ff;
   text-align: center;
 }

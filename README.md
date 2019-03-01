@@ -10,3 +10,5 @@ Projects from freecodecamp made on codepen.io
 * Added "Finished" pages --> Personal Portfolio Code, Dragoon Tech Doc Code --> 2/28/2019
 
 * Updated Survey Form code to "Finished" --> 2/28/2019
+
+* Updated Tribute Page Code --> 3/1/2019
